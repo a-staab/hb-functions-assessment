@@ -63,7 +63,8 @@ def is_hometown(town_name):
     """Takes the name of a town as a string and determines if the town is my
     hometown.
     """
-    return town_name == "Indianapolis"
+    acceptable_answers = ["Indianapolis", "Indy", "Indpls"]
+    return town_name in acceptable_answers
 
 #    (b) Write a function that takes a first and last name as arguments and
 #        returns the concatenation of the two names in one string.
